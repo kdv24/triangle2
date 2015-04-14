@@ -10,7 +10,7 @@ $(document).ready(function() {
                          side3: inputted_side3,
                          type: function() {
                              if(this.side1 >= this.side2 + this.side3 || this.side2 >= this.side1 + this.side3 || this.side3 >= this.side1 + this.side2) {
-
+                                 alert("Nice try buddy!");
                                  return "DAS IST KEIN TRIANGLE!!!";
                              }
                              else if(this.side1 === this.side2 &&  this.side2 === this.side3) {
